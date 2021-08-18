@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="godine.css">
+   <title>Zadatak 3</title>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+   <header id="header">
+      <a id="logo" href="#">
+         <img src="img/etf-dugi.gif" alt="Logo">
+         <span id="title"> Razvoj softvera </span>
+      </a>
+
+      <nav>
+         <ul>
+            <li><a href="pocetna.html">Početna</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="godine.html">Godine</a></li>
+            <li><a href="osoblje.html">Osoblje</a></li>
+            <li><a href="predmeti.html">Predmeti</a></li>
+            <li><a href="laboratorije.html">Laboratorije</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <div class="inputBtn">
+      <div class="form-row">
+         <div class="col">
+            <input class="form-control" id="predmetSearchParam" type="text" onclick="pretraziPoPredmetu()"
+               placeholder="Pretraži po predmetu...">
+         </div>
+         <div class="col">
+            <input class="form-control" id="nastavnikSearchParam" type="text" onclick="pretraziPoNastavniku()"
+               placeholder="Pretraži po nastavniku...">
+         </div>
+         <div class="col">
+            <input class="form-control" id="godinaSearchParam" type="text" onclick="pretraziPoGodini()" placeholder="Pretraži po godini...">
+         </div>
+      </div>
+   </div>
+
+   <article id="content">
+      <div class="table1">
+         <table>
+            <tr>
+               <th class="table1title" colspan="3">Prva godina</th>
+            </tr>
+            <tr>
+               <th class="nazivPredmeta">Naziv predmeta</th>
+               <th class="opis">Opis</th>
+               <th class="profesor">Profesor</th>
+            </tr>
+            <tr class="predmet">
+               <td>Frontend Web tehnologije</td>
+               <td>Web dizajn</td>
+               <td>Vensada Okanović</td>
+               <td style="display: none;">1</td>
+            </tr>
+            <tr class="predmet">
+               <td>Matematika u računarstvu 1</td>
+               <td>Cilj kursa je ponuditi studentima najosnovnija znanja iz nekih matematičkih disciplina koje
+                  imaju primjene u računarstvu.</td>
+               <td>Razija Turčinhodžić</td>
+               <td style="display: none;">1</td>
+            </tr>
+            <tr class="predmet">
+               <td>Uvod u baze podataka</td>
+               <td> Osnove baza podataka, te rad u SQL-u</td>
+               <td>Emir Buza</td>
+               <td style="display: none;">1</td>
+            </tr>
+            <tr class="predmet">
+               <td>Računarska pismenost</td>
+               <td>Na predavanjima se obrađuju temeljni koncepti iz računarstva i informatike. </td>
+               <td>Amila Akagić</td>
+               <td style="display: none;">1</td>
+            </tr>
+            <tr class="predmet">
+               <td>Uvod u programiranje</td>
+               <td> Dizajniranje jednostavnih programa u programskom jeziku C.</td>
+               <td>Vedran Ljubović</td>
+               <td style="display: none;">1</td>
+            </tr>
+            <tr class="predmet">
+               <td>Vjerovatnoća i statistika</td>
+               <td> - </td>
+               <td> - </td>
+               <td style="display: none;">1</td>
+            </tr>
+            <tr class="predmet">
+               <td>Računarske arhitekture i mreže</td>
+               <td> - </td>
+               <td>Samir Bibić</td>
+               <td style="display: none;">1</td>
+            </tr>
+            <tr class="predmet">
+               <td>Razvoj softvera</td>
+               <td> - </td>
+               <td> - </td>
+               <td style="display: none;">1</td>
+            </tr>
+            <tr class="predmet">
+               <td>Tehnike programiranja</td>
+               <td>Osnove programskog jezika C++</td>
+               <td>Željko Jurić</td>
+               <td style="display: none;">1</td>
+            </tr>
+            <tr class="predmet">
+               <td>Matematika u računarstvu 2</td>
+               <td> - </td>
+               <td>Amar Bašić </td>
+               <td style="display: none;">1</td>
+            </tr>
+
+            <tr>
+               <th class="table3title" colspan="3">Druga godina</th>
+            </tr>
+            <tr>
+               <th class="nazivPredmeta">Naziv predmeta</th>
+               <th class="opis">Opis</th>
+               <th class="profesor">Profesor</th>
+               <td style="display: none;">2</td>
+            </tr>
+            <tr class="predmet">
+               <td>Interakcija čovjek - računar</td>
+               <td> - </td>
+               <td>Dušanka Bošković</td>
+               <td style="display: none;">2</td>
+            </tr>
+            <tr class="predmet">
+               <td>Skladišta podataka</td>
+               <td> - </td>
+               <td> - </td>
+               <td style="display: none;">2</td>
+            </tr>
+            <tr class="predmet">
+               <td>Web tehnologije</td>
+               <td> - </td>
+               <td> - </td>
+               <td style="display: none;">2</td>
+            </tr>
+            <tr class="predmet">
+               <td>Programski jezici i prevodioci</td>
+               <td> - </td>
+               <td> - </td>
+               <td style="display: none;">2</td>
+            </tr>
+            <tr class="predmet">
+               <td>Verifikacija i validacija softvera</td>
+               <td> - </td>
+               <td> - </td>
+               <td style="display: none;">2</td>
+            </tr>
+            <tr class="predmet">
+               <td>Algoritmi i strukture podataka </td>
+               <td> - </td>
+               <td> - </td>
+               <td style="display: none;">2</td>
+            </tr>
+            <tr class="predmet">
+               <td>Napredni razvoj softvera</td>
+               <td> - </td>
+               <td> - </td>
+               <td style="display: none;">2</td>
+            </tr>
+            <tr class="predmet">
+               <td>Razvoj mobilnih aplikacija</td>
+               <td> - </td>
+               <td> - </td>
+               <td style="display: none;">2</td>
+            </tr>
+
+         </table>
+      </div>
+
+      <div class="middleContent"></div>
+
+      <div id="table2" class="table2">
+         <table>
+            <tr>
+               <th class="table2title" colspan="6">Prva godina</th>
+            </tr>
+            <tr>
+               <th class="nbsp">&nbsp;</th>
+               <th>PON</th>
+               <th>UTO</th>
+               <th>SRI</th>
+               <th>ČET</th>
+               <th>PET</th>
+            </tr>
+            <tr>
+               <td>9:00</td>
+               <td id="razija" class="predavanja">Matematika u računarstvu 1 RS1(2-01)</td>
+               <td id="vensada" class="predavanja">Frontend Web tehnologije RS1 (3-02) </td>
+               <td id="emir" class="predavanja">Uvod u baze podataka RI2 - RS1 (A3) </td>
+               <td class="vjezbe">Uvod u programiranje RS1-1 (0-02) </td>
+               <td class="kombinacija">Matematika u računarstvu 1-RS1-1 (3-02)/
+                  Uvod u programiranje RS1-2 (0-02) </td>
+            </tr>
+            <tr>
+               <td>10:00</td>
+               <td id="razija" class="predavanja">Matematika u računarstvu 1 RS1(2-01)</td id="razija">
+               <td id="vensada" class="predavanja">Frontend Web tehnologije RS1 (3-02)</td id="vensada">
+               <td id="emir" class="predavanja">Uvod u baze podataka RI2 - RS1 (A3)</td id="emir">
+               <td class="predavanja">Uvod u programiranje RS1-1 (0-02)</td>
+               <td class="kombinacija">Matematika u računarstvu 1-RS1-1 (3-02)/
+                  Uvod u programiranje RS1-2 (0-02)</td>
+            </tr>
+            <tr>
+               <td>11:00</td>
+               <td id="razija" class="predavanja">Matematika u računarstvu 1 RS1(2-01)</td id="razija">
+               <td id="vensada" class="predavanja">Frontend Web tehnologije RS1 (3-02)</td id="vensada">
+               <td id="emir" class="predavanja">Uvod u baze podataka RI2 - RS1 (A3)</td id="emir">
+               <td class="predavanja">Uvod u programiranje RI1-RS1 (A2)</td>
+               <td class="tutorijali">Matematika u računarstvu 1-RS1-2 (3-02)</td>
+            </tr>
+            <tr>
+               <td>12:00</td>
+               <td id="razija" class="predavanja">Matematika u računarstvu 1 RS1(2-01)</td id="razija">
+               <td></td>
+               <td class="kombinacija">Uvod u baza podataka RS1-1(1-04)
+                  Frontend Web tehnologije RS1-2 (1-15)
+               </td>
+               <td class="predavanja">Uvod u programiranje RI1-RS1 (A2)</td>
+               <td class="tutorijali">Matematika u računarstvu 1-RS1-2 (3-02)</td>
+            </tr>
+
+            <tr>
+               <td>12:30</td>
+               <td id="razija" class="predavanja">Matematika u računarstvu 1 RS1(2-01)</td id="razija">
+               <td></td>
+               <td class="kombinacija">Uvod u baza podataka RS1-1(1-04)
+                  Frontend Web tehnologije RS1-2 (1-15)
+               </td>
+               <td class="predavanja">Uvod u programiranje RI1-RS1 (A2)</td>
+               <td class="tutorijali">Matematika u računarstvu 1-RS1-2 (3-02)</td>
+            </tr>
+
+            <tr>
+               <td>13:00</td>
+               <td></td>
+               <td></td>
+               <td class="kombinacija">Uvod u baza podataka RS1-1(1-04)
+                  Frontend Web tehnologije RS1-2 (1-15) </td>
+               <td class="predavanja">Uvod u programiranje RI1-RS1 (A2)</td>
+               <td class="vjezbe">Računarska pismenost RS2-2(1-13)</td>
+            </tr>
+            <tr>
+               <td>13:30</td>
+               <td></td>
+               <td></td>
+               <td class="kombinacija">Uvod u baza podataka RS1-2(1-04)
+                  Frontend Web tehnologije RS1-1 (1-15)
+               </td>
+               <td class="predavanja">Uvod u programiranje RI1-RS1 (A2)</td>
+               <td class="vjezbe">Računarska pismenost RS1-2 (1-13)</td>
+            </tr>
+            <tr>
+               <td>14:00</td>
+               <td></td>
+               <td class="vjezbe">Frontend Web Tehnologije RS1-3 (1-15)</td>
+               <td class="kombinacija">Uvod u baza podataka RS1-2 (1-04)
+                  Frontend Web tehnologije RS1-1 (1-15)
+               </td>
+               <td class="predavanja">Računarska pismenost RS1 (2-01)</td>
+               <td class="vjezbe">Računarska pismenost RS1-2 (1-13)</td>
+            </tr>
+
+            <tr>
+               <td>14:30</td>
+               <td></td>
+               <td class="vjezbe">Frontend Web Tehnologije RS1-3 (1-15)</td>
+               <td class="kombinacija">Uvod u baza podataka RS1-2 (1-04)
+                  Frontend Web tehnologije RS1-1 (1-15)
+               </td>
+               <td class="predavanja">Računarska pismenost RS1 (2-01)</td>
+               <td class="vjezbe">Računarska pismenost RS1-3 (1-13)</td>
+            </tr>
+            <tr>
+               <td>15:00</td>
+               <td></td>
+               <td class="vjezbe">Frontend Web Tehnologije RS1-3 (1-15)</td>
+               <td></td>
+               <td class="predavanja">Računarska pismenost RS1 (2-01)</td>
+               <td class="vjezbe">Računarska pismenost RS1-3 (1-13)</td>
+            </tr>
+
+            <tr>
+               <td>15:30</td>
+               <td></td>
+               <td class="vjezbe">Frontend Web Tehnologije RS1-4 (1-15)</td>
+               <td></td>
+               <td class="predavanja">Računarska pismenost RS1 (2-01)</td>
+               <td class="vjezbe">Računarska pismenost RS1-3 (1-13)</td>
+            </tr>
+
+            <tr>
+               <td>16:00</td>
+               <td></td>
+               <td class="vjezbe">Frontend Web Tehnologije RS1-4 (1-15)</td>
+               <td></td>
+               <td class="predavanja">Računarska pismenost RS1 (2-01)</td>
+               <td></td>
+            </tr>
+
+            <tr>
+               <td>16:30</td>
+               <td class="vjezbe">Uvod u baze podataka RS1-3 (1-04)</td>
+               <td class="vjezbe">Frontend Web Tehnologije RS1-4 (1-15)</td>
+               <td></td>
+               <td class="predavanja">Računarska pismenost RS1 (2-01)</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>17:00</td>
+               <td class="vjezbe"> Uvod u baze podataka RS1-3 (1-04)</td>
+               <td class="vjezbe">Frontend Web Tehnologije RS1-4 (1-15)</td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>18:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>19:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>20:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <th class="table4title" colspan="6">Druga godina</th>
+            </tr>
+            <tr id="dashed">
+               <th class="nbsp">&nbsp;</th>
+               <th>PON</th>
+               <th>UTO</th>
+               <th>SRI</th>
+               <th>ČET</th>
+               <th>PET</th>
+            </tr>
+            <tr>
+               <td>9:00</td>
+               <td></td>
+               <td class="predavanja">Algoritmi i strukture podataka RI2-RS2(A3)</td>
+               <td class="predavanja">Web Tehnologije RI3-RS2 (0-01)</td>
+               <td></td>
+               <td class="predavanja">Programski Jezici i Prevodioci RI3pip-RS2 (S0)</td>
+            </tr>
+            <tr>
+               <td>10:00</td>
+               <td></td>
+               <td class="predavanja">Algoritmi i strukture podataka RI2-RS2(A3)</td>
+               <td class="predavanja">Web Tehnologije RI3-RS2 (0-01)</td>
+               <td></td>
+               <td class="predavanja">Programski Jezici i Prevodioci RI3pip-RS2 (S0)</td>
+            </tr>
+            <tr>
+               <td>11:00</td>
+               <td></td>
+               <td class="predavanja">Algoritmi i strukture podataka RI2-RS2(A3)</td>
+               <td class="predavanja">Web Tehnologije RI3-RS2 (0-01)</td>
+               <td></td>
+               <td class="predavanja">Programski Jezici i Prevodioci RI3pip-RS2 (S0)</td>
+            </tr>
+
+            <tr>
+               <td>11:30</td>
+               <td class="tutorijali"> Web tehnologije RS2wt (1-15)</td>
+               <td class="predavanja">Algoritmi i strukture podataka RI2-RS2(A3)</td>
+               <td class="predavanja">Web Tehnologije RI3-RS2 (0-01)</td>
+               <td></td>
+               <td class="predavanja">Programski Jezici i Prevodioci RI3pip-RS2 (S0)</td>
+            </tr>
+            <tr>
+               <td>12:00</td>
+               <td class="tutorijali"> Web tehnologije RS2wt (1-15)</td>
+               <td class="tutorijali">Verifikacija i Validacija Softvera - RS2vvs (1-15) </td>
+               <td></td>
+               <td class="predavanja">Verifikacija i Validacija Softvera RI3vvs-RS2 (A3)</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>13:00</td>
+               <td></td>
+               <td class="tutorijali">Verifikacija i Validacija Softvera - RS2vvs (1-15) </td>
+               <td></td>
+               <td class="predavanja">Verifikacija i Validacija Softvera RI3vvs-RS2 (A3)</td>
+               <td></td>
+            </tr>
+
+            <tr>
+               <td>13:30</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td class="predavanja">Verifikacija i Validacija Softvera RI3vvs-RS2 (A3)</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>14:00</td>
+               <td class="vjezbe"> Programski Jezici i Prevodioci RS2pjp (1-11) </td>
+               <td></td>
+               <td></td>
+               <td class="predavanja">Verifikacija i Validacija Softvera RI3vvs-RS2 (A3)</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>15:00</td>
+               <td class="tutorijali">Algoritmi i Strukture Podataka RS2 (1-04)</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>16:00</td>
+               <td class="vjezbe">Algoritmi i Strukture Podataka RS2 (1-04)</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>16:30</td>
+               <td class="vjezbe"> Interakcija Čovjek Računar RS2 (0-13)</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>17:00</td>
+               <td class="vjezbe"> Interakcija Čovjek Računar RS2 (0-13)</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>18:00</td>
+               <td class="vjezbe"> Interakcija Čovjek Računar RS2 (0-13)</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>19:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>20:00</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+         </table>
+      </div>
+   </article>
+   <button onclick="testGodine()">TEST</button>
+   <footer id="footer">
+      <div id="footer-content">
+         <ul>
+            <li>
+               <span>Elektrotehnički fakultet Sarajevo</span>
+            </li>
+            <li>
+               <span>Zmaja od Bosne bb</span>
+
+            </li>
+            <li>
+               <span>Razvoj softvera</span>
+            </li>
+            <li>
+               <span><a target="_blank" href="http://www.etf.unsa.ba/">Official web page</a></span>
+            </li>
+         </ul>
+      </div>
+   </footer>
+   <script src="./pretraga.js"></script>
+   <script src="./godine.js"></script>
+   <script src="./skripta.js"></script>
+</body>
+
+</html>

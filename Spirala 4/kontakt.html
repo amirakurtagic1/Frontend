@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="kontakt.css">
+    <title>Zadatak 2</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a id="logo" href="#">
+            <img src="img/etf-dugi.gif" alt="Logo">
+            <span id="title"> Razvoj softvera</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="pocetna.html">Početna</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="godine.html">Godine</a></li>
+                <li><a href="osoblje.html">Osoblje</a></li>
+                <li><a href="predmeti.html">Predmeti</a></li>
+                <li><a href="laboratorije.html">Laboratorije</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="content">
+        <div class="container">
+            <h3>Unesite podatke:</h3>
+
+            <form action="#">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Ime i prezime</label>
+                    </div>
+                    <div class="col-75">
+                        <input class="form-control" type="text" id="fname" name="firstname" placeholder="Vaše ime">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email adresa</label>
+                    </div>
+                    <div class="col-75">
+                        <input class="form-control" type="text" id="email" name="email" placeholder="email@etf.unsa.ba">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Polaznik</label>
+                    </div>
+                    <div class="col-75" id="polaznik">
+                        <input class="form-control" type="radio" name="polaznik">Da
+                        <input class="form-control" type="radio" name="polaznik">Ne
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Predmet</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="upit">Upit</option>
+                            <option value="komentar">Komentar</option>
+                            <option value="zahtjev">Zahtjev</option>
+                            <option value="ostalo">Ostalo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="tekst">Tekst</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea class="form-control" id="tekst" name="tekst" placeholder="Unesite vaš komentar ..."></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Dodatak</label>
+                    </div>
+                    <div class="col-75" id="dodatak">
+                        <input class="form-control" type="file" name="dodatak">
+                    </div>
+                </div>
+                <div class="row">
+                    <input class="form-control" type="submit" value="Pošalji">
+                </div>
+            </form>
+        </div>
+    </article>
+
+    <footer id="footer">
+        <div id="footer-content">
+            <ul>
+                <li>
+                    <span>Elektrotehnički fakultet Sarajevo</span>
+                </li>
+                <li>
+                    <span>Zmaja od Bosne bb</span>
+
+                </li>
+                <li>
+                    <span>Razvoj softvera</span>
+                </li>
+                <li>
+                    <span><a target="_blank" href="http://www.etf.unsa.ba/">Official web page</a></span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Pretraga Testovi</title>
+   <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+</head>
+
+<body>
+   <div id="mocha"></div>
+   <script src="https://unpkg.com/chai/chai.js"></script>
+   <script src="https://unpkg.com/mocha/mocha.js"></script>
+   <script class="mocha-init">
+      mocha.setup('bdd');
+      mocha.checkLeaks(false);
+   </script>
+   <script src="./pretraga.js"></script>
+   <script src="./pretragaTestovi.js"></script>
+   <script class="mocha-exec">
+      mocha.run();
+   </script>
+
+   <table>
+      <tr>
+         <th class="table1title" colspan="3">Prva godina</th>
+      </tr>
+      <tr>
+         <th class="nazivPredmeta">Naziv predmeta</th>
+         <th class="opis">Opis</th>
+         <th class="profesor">Profesor</th>
+      </tr>
+      <tr class="predmet">
+         <td>Frontend Web tehnologije</td>
+         <td>Web dizajn</td>
+         <td>Vensada Okanović</td>
+         <td style="display: none;">1</td>
+      </tr>
+      <tr class="predmet">
+         <td>Matematika u računarstvu 1</td>
+         <td>Cilj kursa je ponuditi studentima najosnovnija znanja iz nekih matematičkih disciplina koje
+            imaju primjene u računarstvu.</td>
+         <td>Razija Turčinhodžić</td>
+         <td style="display: none;">1</td>
+      </tr>
+      <tr class="predmet">
+         <td>Uvod u baze podataka</td>
+         <td> Osnove baza podataka, te rad u SQL-u</td>
+         <td>Emir Buza</td>
+         <td style="display: none;">1</td>
+      </tr>
+      <tr class="predmet">
+         <td>Računarska pismenost</td>
+         <td>Na predavanjima se obrađuju temeljni koncepti iz računarstva i informatike. </td>
+         <td>Amila Akagić</td>
+         <td style="display: none;">1</td>
+      </tr>
+      <tr class="predmet">
+         <td>Uvod u programiranje</td>
+         <td> Dizajniranje jednostavnih programa u programskom jeziku C.</td>
+         <td>Vedran Ljubović</td>
+         <td style="display: none;">1</td>
+      </tr>
+      <tr class="predmet">
+         <td>Vjerovatnoća i statistika</td>
+         <td> - </td>
+         <td> - </td>
+         <td style="display: none;">1</td>
+      </tr>
+      <tr class="predmet">
+         <td>Računarske arhitekture i mreže</td>
+         <td> - </td>
+         <td>Samir Bibić</td>
+         <td style="display: none;">1</td>
+      </tr>
+      <tr class="predmet">
+         <td>Razvoj softvera</td>
+         <td> - </td>
+         <td> - </td>
+         <td style="display: none;">1</td>
+      </tr>
+      <tr class="predmet">
+         <td>Tehnike programiranja</td>
+         <td>Osnove programskog jezika C++</td>
+         <td>Željko Jurić</td>
+         <td style="display: none;">1</td>
+      </tr>
+      <tr class="predmet">
+         <td>Matematika u računarstvu 2</td>
+         <td> - </td>
+         <td>Amar Bašić </td>
+         <td style="display: none;">1</td>
+      </tr>
+
+      <tr>
+         <th class="table3title" colspan="3">Druga godina</th>
+      </tr>
+      <tr>
+         <th class="nazivPredmeta">Naziv predmeta</th>
+         <th class="opis">Opis</th>
+         <th class="profesor">Profesor</th>
+         <td style="display: none;">2</td>
+      </tr>
+      <tr class="predmet">
+         <td>Interakcija čovjek - računar</td>
+         <td> - </td>
+         <td>Dušanka Bošković</td>
+         <td style="display: none;">2</td>
+      </tr>
+      <tr class="predmet">
+         <td>Skladišta podataka</td>
+         <td> - </td>
+         <td> - </td>
+         <td style="display: none;">2</td>
+      </tr>
+      <tr class="predmet">
+         <td>Web tehnologije</td>
+         <td> - </td>
+         <td> - </td>
+         <td style="display: none;">2</td>
+      </tr>
+      <tr class="predmet">
+         <td>Programski jezici i prevodioci</td>
+         <td> - </td>
+         <td> - </td>
+         <td style="display: none;">2</td>
+      </tr>
+      <tr class="predmet">
+         <td>Verifikacija i validacija softvera</td>
+         <td> - </td>
+         <td> - </td>
+         <td style="display: none;">2</td>
+      </tr>
+      <tr class="predmet">
+         <td>Algoritmi i strukture podataka </td>
+         <td> - </td>
+         <td> - </td>
+         <td style="display: none;">2</td>
+      </tr>
+      <tr class="predmet">
+         <td>Napredni razvoj softvera</td>
+         <td> - </td>
+         <td> - </td>
+         <td style="display: none;">2</td>
+      </tr>
+      <tr class="predmet">
+         <td>Razvoj mobilnih aplikacija</td>
+         <td> - </td>
+         <td> - </td>
+         <td style="display: none;">2</td>
+      </tr>
+
+   </table>
+</body>
+
+</html>
